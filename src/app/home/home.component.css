@@ -20,16 +20,28 @@ h1, p {
 }
 
 fa-icon {
-    font-size: 2rem;
+    font-size: 2.5rem;
+    color: black;
 }
 
-.float:hover {
+.float a fa-icon:hover {
     color: white;
-    transform: translateY(-20%);
+    transition: ease-out 300ms;
+}
+
+
+.float:hover {
+    transform: translateY(-10%);
     transition: ease-out 300ms;
 }
 
 .float {
     color: black;
+    display: inline-block;
+    height: 80%;
     transition: ease-out 300ms;
+}
+
+.my-custom-class {
+    color: green !important;
 }

@@ -23,17 +23,27 @@
             <div class="col-sm-3"></div>
             <div class="col-sm-2 text-center text-dark" placement="top" ngbTooltip="https://www.linkedin.com/in/n-a-lee/">
                 <div class="float">
-                    <fa-icon [icon]="faLinkedin"></fa-icon>
+                    <a href="https://www.linkedin.com/in/n-a-lee/">
+                        <fa-icon [icon]="faLinkedin"></fa-icon>
+                    </a>
                 </div>
             </div>
-            <div class="col-sm-2 text-center text-dark">
+            <div class="col-sm-2 text-center text-dark" placement="top" ngbTooltip="https://github.com/nicoalee">
                 <div class="float">
-                    <fa-icon [icon]="faGithubSquare"></fa-icon>
+                    <a href="https://github.com/nicoalee">
+                        <fa-icon [icon]="faGithubSquare"></fa-icon>
+                    </a>
                 </div>
             </div>
-            <div class="col-sm-2 text-center text-dark">
-                <div class="float">
-                    <fa-icon [icon]="faEnvelopeSquare"></fa-icon>
+            <div class="col-sm-2 text-center text-dark" placement="top" ngbTooltip="Click to copy nicholasleea@gmail.com" #emailElement>
+                <div class="float" (click)="copyToClipboard('nicholasleea@gmail.com')" ngbTooltip="Copied!" triggers="click:blur" [ngbTooltip]="tooltipContent">
+                    <ng-template #tooltipContent>
+                        <fa-icon style="color: green; font-size: 1rem;" [icon]="faCheckCircle"></fa-icon>
+                        <span style="color: green;">&nbsp;Copied!</span>
+                    </ng-template>
+                    <a>
+                        <fa-icon [icon]="faEnvelopeSquare"></fa-icon>
+                    </a>
                 </div>
             </div>
             <div class="col-sm-3"></div>

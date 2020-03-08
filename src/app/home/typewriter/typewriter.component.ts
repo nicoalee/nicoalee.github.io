@@ -54,7 +54,7 @@ export class TypewriterComponent implements OnInit {
                 this.typewriterMultipleWords()
               }
               this.typedWord = this.typedWord.slice(0, this.typedWord.length - 1)
-            }, 100)
+            }, 70)
 
           }
           if(this.typedWord[this.typedWord.length - 1] === "|") {
