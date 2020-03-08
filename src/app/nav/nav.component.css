@@ -1,0 +1,17 @@
+#code-font {
+    font-family: SourceCodePro;
+    font-size: 1.5rem;
+}
+
+.nav-link, .navbar-brand {
+    color: black;
+}
+
+.nav-link:hover, .navbar-brand:hover {
+    color: white;
+    transition: ease-in 150ms;
+}
+
+.active {
+    color: black;
+}

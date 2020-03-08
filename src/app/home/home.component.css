@@ -1,0 +1,35 @@
+.triangle {
+    position: relative;
+    z-index: -1;
+    border-bottom: 90vh solid white;
+    border-left: 270vw solid #4c86c3;
+    overflow: hidden;
+}
+
+.intro-card {
+    width: 50vw;
+}
+
+.profile {
+    width: 150px;
+    border-radius: 50%;
+}
+
+h1, p {
+    font-family: Montserrat;
+}
+
+fa-icon {
+    font-size: 2rem;
+}
+
+.float:hover {
+    color: white;
+    transform: translateY(-20%);
+    transition: ease-out 300ms;
+}
+
+.float {
+    color: black;
+    transition: ease-out 300ms;
+}
