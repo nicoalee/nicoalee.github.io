@@ -1,7 +1,7 @@
 .triangle {
     position: relative;
     z-index: -1;
-    border-bottom: 90vh solid white;
+    border-bottom: 80vh solid white;
     border-left: 270vw solid #4c86c3;
     overflow: hidden;
 }
@@ -25,7 +25,7 @@ fa-icon {
 }
 
 .float a fa-icon:hover {
-    color: white;
+    color: firebrick;
     transition: ease-out 300ms;
 }
 
@@ -44,4 +44,14 @@ fa-icon {
 
 .my-custom-class {
     color: green !important;
+}
+
+@media only screen and (max-width: 480px) {
+    .big-intro {
+        font-size: 2rem;
+    }
+    .small-dynamic-intro {
+        text-align: left;
+        height: 64px;
+    }
 }
