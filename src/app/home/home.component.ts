@@ -21,13 +21,13 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  copyToClipboard(email: string) {
+  copyToClipboard() {
     let selBox = document.createElement('textarea');
     selBox.style.position = 'fixed';
     selBox.style.left = '0';
     selBox.style.top = '0';
     selBox.style.opacity = '0';
-    selBox.value = email;
+    selBox.value = "nicholasleea@gmail.com";
     document.body.appendChild(selBox);
     selBox.focus();
     selBox.select();

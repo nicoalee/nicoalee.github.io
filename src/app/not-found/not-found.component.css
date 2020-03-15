@@ -1,0 +1,14 @@
+.gif {
+    border-radius: 50%;
+    width: 350px;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .gif {
+        width: 250px;
+    }
+    .error-message {
+        font-size: 1rem !important;
+    }
+}

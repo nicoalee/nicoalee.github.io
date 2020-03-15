@@ -2,7 +2,7 @@
     <div class="triangle"></div>
 </div>
 
-<div class="position-relative h-75 d-flex align-items-center justify-content-center">
+<div class="position-relative h-100 d-flex align-items-center justify-content-center">
     <div class="d-flex justify-content-center">
         <div class="intro-card">
             <div class="row">
@@ -34,8 +34,8 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-sm-2 text-center text-dark" placement="top" ngbTooltip="Click to copy nicholasleea@gmail.com" #emailElement>
-                    <div class="float" style="cursor: pointer;" (click)="copyToClipboard('nicholasleea@gmail.com')" ngbTooltip="Copied!" triggers="click:blur" [ngbTooltip]="tooltipContent">
+                <div class="col-sm-2 text-center text-dark" placement="top" ngbTooltip="Click to copy my email" #emailElement>
+                    <div class="float" style="cursor: pointer;" (click)="copyToClipboard()" ngbTooltip="Copied!" triggers="click:blur" [ngbTooltip]="tooltipContent">
                         <ng-template #tooltipContent>
                             <fa-icon style="color: green; font-size: 1rem;" [icon]="faCheckCircle"></fa-icon>
                             <span style="color: green;">&nbsp;Copied!</span>

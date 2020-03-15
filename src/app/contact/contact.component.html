@@ -1,1 +1,28 @@
-<p>contact works!</p>
+<div class="calm-blue" style="height: 100%; width: 100%; position: absolute;">
+    <div class="container d-flex text-light justify-content-center">
+        <img class="contact-picture" src="../../assets/svgs/contact.svg" alt="">
+    </div>
+</div>
+
+<div class="overlay text-dark justify-content-center align-items-center">
+    <div class="message text-center">
+        <h3>Want to chat? Feel free to reach out by email</h3>
+        <div class="input-group input-group-md">
+            <div type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">nicholasleea@gmail.com</div>
+            <div class="input-group-append">
+              <button
+                [ngbTooltip]="tooltipContent"
+                (click)="copyToClipboard()" 
+                ngbTooltip="Copied!" 
+                triggers="click:blur" 
+                class="btn btn-primary input-group-text">
+                Copy
+            </button>
+            <ng-template #tooltipContent>
+                <fa-icon style="color: green; font-size: 1rem;" [icon]="faCheckCircle"></fa-icon>
+                <span style="color: green;">&nbsp;Copied!</span>
+            </ng-template>
+            </div>
+        </div>
+    </div>
+</div>

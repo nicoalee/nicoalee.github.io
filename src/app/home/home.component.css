@@ -1,7 +1,7 @@
 .triangle {
     position: relative;
     z-index: -1;
-    border-bottom: 80vh solid white;
+    border-bottom: 100vh solid white;
     border-left: 270vw solid #4c86c3;
     overflow: hidden;
 }
@@ -56,5 +56,11 @@ fa-icon {
     }
     .profile {
         margin-bottom: 10%;
+    }
+    .triangle {
+        border-left: 390vw solid #4c86c3;
+    }
+    .intro-card {
+        width: 70vw;
     }
 }

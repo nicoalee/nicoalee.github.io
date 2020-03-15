@@ -1,5 +1,6 @@
 .calm-blue {
     background-color: #4c86c3;
+    padding: 8% 0;
 }
 
 .image-wrapper {
@@ -16,5 +17,8 @@
     .image-wrapper {
         width: 200px;
         margin-bottom: 5%;
+    }
+    .calm-blue {
+        padding-top: 18%;
     }
 }
