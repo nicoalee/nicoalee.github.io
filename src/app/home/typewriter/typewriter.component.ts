@@ -58,9 +58,14 @@ export class TypewriterComponent implements OnInit {
 
           }
           if(this.typedWord[this.typedWord.length - 1] === "|") {
-            this.typedWord = this.typedWord.slice(0, this.typedWord.length - 1)
+            // this.typedWord = this.typedWord.slice(0, this.typedWord.length - 1)
+            this.typedWord = this.typedWord.replace(/.$/, "    ")
           } else {
-            this.typedWord += "|"
+            if(this.typedWord[this.typedWord.length - 1] !== "    ") {
+              this.typedWord += "|"
+            } else {
+              this.typedWord = this.typedWord.replace(/.$/, "|")
+            }
           }
           
         }, 400)

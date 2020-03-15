@@ -46,12 +46,15 @@ fa-icon {
     color: green !important;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 992px) {
     .big-intro {
         font-size: 2rem;
     }
     .small-dynamic-intro {
         text-align: left;
         height: 64px;
+    }
+    .profile {
+        margin-bottom: 10%;
     }
 }
