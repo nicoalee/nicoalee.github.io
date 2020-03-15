@@ -16,7 +16,7 @@ export class HomeComponent implements OnInit {
   faEnvelopeSquare = faEnvelopeSquare
   faCheckCircle = faCheckCircle
 
-  typewriterWords: string[] = ["budding web developer", "traveller", "lover of food", "part time adult"]
+  typewriterWords: string[] = ["motivated web developer", "traveller", "lover of food", "part time adult"]
 
   ngOnInit(): void {
   }

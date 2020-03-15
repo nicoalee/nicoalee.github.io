@@ -12,6 +12,7 @@ import { ErrorComponent } from './error/error.component';
 import { ContactComponent } from './contact/contact.component';
 import { TypewriterComponent } from './home/typewriter/typewriter.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { InterestingStuffComponent } from './interesting-stuff/interesting-stuff.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     NotFoundComponent,
     ErrorComponent,
     ContactComponent,
-    TypewriterComponent
+    TypewriterComponent,
+    InterestingStuffComponent
   ],
   imports: [
     BrowserModule,
