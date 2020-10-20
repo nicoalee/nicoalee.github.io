@@ -21,6 +21,7 @@
 @media only screen and (max-width: 768px) {
     .summary-container {
         padding-top: 20%;
+        text-align: center;
     }
     .col-lg-5 {
         margin: 0 auto;
