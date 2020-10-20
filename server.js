@@ -4,9 +4,7 @@ const path = require('path');
 
 const app = express();
 
-// Serve only the static files form the dist directory
-app.use(express.static(__dirname + '/dist/personalWebsite'));
-
+// redirect to https if http
 app.use((req, res, next) => {
     if(req.header("x-forwarded-proto") !== "https") {
         console.log("Received protocol: " + req.header("x-forwarded-proto"));
@@ -16,6 +14,10 @@ app.use((req, res, next) => {
         next()
     }
 })
+
+// Serve only the static files form the dist directory
+app.use(express.static(__dirname + '/dist/personalWebsite'));
+
 
 app.get('/*', function(req,res) {
     res.sendFile(path.join(__dirname+'/dist/personalWebsite/index.html'));
