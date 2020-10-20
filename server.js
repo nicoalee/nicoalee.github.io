@@ -9,7 +9,7 @@ app.use(express.static(__dirname + '/dist/personalWebsite'));
 
 app.use((req, res, next) => {
     if(req.header("x-forwarded-proto") !== "https") {
-        console.log(req.header("Received protocol: " + "x-forwarded-proto"));
+        console.log("Received protocol: " + req.header("x-forwarded-proto"));
         console.log("Redirecting to: https://" + req.header("host"));
         res.redirect(`https://${req.header('host')}`)
     } else {
